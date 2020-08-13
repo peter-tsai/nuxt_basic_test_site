@@ -15,5 +15,8 @@
 		"nuxt": "^2.14.1",
 		"sass-loader": "^9.0.3",
 		"vue-web-cam": "^1.9.0"
+	},
+	"devDependencies": {
+		"@nuxtjs/dotenv": "^1.4.1"
 	}
 }
