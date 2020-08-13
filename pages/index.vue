@@ -2,6 +2,8 @@
 
     <div class="container">
 
+        <Location />
+
         <LoadedImage />
 
     </div>
