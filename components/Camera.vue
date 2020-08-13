@@ -69,6 +69,21 @@
                 <div class="has-text-centered">
 
                     <h2 class="title">Captured Image</h2>
+
+                    <b-button @click="saveImage">Save Image</b-button>                 
+
+                </div>
+
+            </div>
+
+        </div>
+
+         <div class="columns is-centered">
+
+            <div class="column">
+
+                <div class="has-text-centered">
+          
                     <figure class="figure">
                         <img id="CapturedImage" alt="Captured Image" :src="img" class="img-responsive" />
                     </figure>
