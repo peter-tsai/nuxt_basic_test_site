@@ -2,8 +2,6 @@
 
     <div class="container">
 
-        <h2 class="title">Image Loaded from Local Storage</h2>
-
         <LoadedImage />
 
     </div>

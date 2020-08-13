@@ -8,6 +8,8 @@
 
                 <div class="has-text-centered">
 
+                    <h2 class="title">Image Loaded from Local Storage</h2>
+
                     <img alt="Captured Image" id="LoadedImage" :src="image_src" />
 
                 </div>
