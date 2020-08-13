@@ -125,11 +125,6 @@ export default {
     methods: {
         onCapture() {
             this.img = this.$refs.webcam.capture();
-
-            const capturedImage = document.getElementById('CapturedImage');
-            const imageData = this.$getBase64Image(capturedImage);
-            localStorage.setItem('captured_image', imageData);
-
         },
         onStarted(stream) {
             console.log("On Started Event", stream);
@@ -154,7 +149,12 @@ export default {
             this.deviceId = deviceId;
             this.camera = deviceId;
             console.log("On Camera Change Event", deviceId);
-        }
+        },
+        saveImage() {
+            const capturedImage = document.getElementById('CapturedImage');
+            const imageData = this.$getBase64Image(capturedImage);
+            localStorage.setItem('captured_image', imageData);
+        },
     }
 
 }
