@@ -4,9 +4,15 @@
 
         <Header />
 
+        <hr >
+
         <Navigation />
 
+        <hr />
+
         <Nuxt />
+
+        <hr />
 
         <Footer />
 

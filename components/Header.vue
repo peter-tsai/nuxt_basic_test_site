@@ -16,8 +16,6 @@
 
         </div>
 
-        <hr />
-
     </div>
 
 </template>
