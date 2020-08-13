@@ -1,0 +1,19 @@
+{
+	"name": "nuxt_basic_test_site",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"start": "nuxt start"
+	},
+	"dependencies": {
+		"@nuxtjs/onesignal": "^3.0.0-beta.16",
+		"@nuxtjs/pwa": "^3.0.0-beta.20",
+		"buefy": "^0.8.20",
+		"bulma": "^0.9.0",
+		"node-sass": "^4.14.1",
+		"nuxt": "^2.14.1",
+		"sass-loader": "^9.0.3",
+		"vue-web-cam": "^1.9.0"
+	}
+}

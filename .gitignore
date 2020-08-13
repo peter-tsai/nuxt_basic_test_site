@@ -1,0 +1,7 @@
+.env
+.nuxt
+node_modules
+dist
+sw.*
+OneSignalSDK*
+
