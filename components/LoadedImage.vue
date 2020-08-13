@@ -40,7 +40,12 @@ export default {
 
             const capturedImage = localStorage.getItem('captured_image');
 
+            console.log('Captured Image Check');
+
             if (capturedImage) {
+
+                console.log('Image found in localStorage');
+
                 const loadedImage = document.getElementById('LoadedImage');
                 loadedImage.src = "data:image/png;base64," + capturedImage;
             }
