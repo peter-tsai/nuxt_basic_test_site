@@ -169,6 +169,7 @@ export default {
             const capturedImage = document.getElementById('CapturedImage');
             const imageData = this.$getBase64Image(capturedImage);
             localStorage.setItem('captured_image', imageData);
+            this.$buefy.toast.open('Image saved to Local Storage');
         },
     }
 
