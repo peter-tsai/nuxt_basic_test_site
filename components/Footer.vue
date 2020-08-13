@@ -2,11 +2,7 @@
 
     <div class="container">
 
-        <Location />
-
         <hr />
-
-        <LoadedImage />
 
     </div>
 
@@ -15,7 +11,7 @@
 <script>
 
 export default {
-    layout: 'webpage',
+    
 }
 
 </script>
