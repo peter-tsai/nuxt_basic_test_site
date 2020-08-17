@@ -2,7 +2,7 @@
 
     <div class="container">
 
-        <Camera />
+        <browser-webcam />
 
     </div>
 
@@ -12,6 +12,11 @@
 
 export default {
     layout: 'webpage',
+
+    components: {
+        'browser-webcam': process.client && Camera
+    },
+
 }
 
 </script>
