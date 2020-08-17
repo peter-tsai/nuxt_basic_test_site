@@ -2,7 +2,7 @@
 
     <div class="container">
 
-        <browser-webcam />
+        <Camera />
 
     </div>
 
@@ -13,9 +13,7 @@
 export default {
     layout: 'webpage',
 
-    components: {
-        'browser-webcam': import('~/components/Camera')
-    },
+    
 
 }
 
