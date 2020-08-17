@@ -14,7 +14,7 @@ export default {
     layout: 'webpage',
 
     components: {
-        'browser-webcam': process.browser && import('~/components/Camera')
+        'browser-webcam': import('~/components/Camera')
     },
 
 }

@@ -137,6 +137,10 @@ export default {
         }
     },
 
+    mounted() {
+        console.log('Camera componented mounted');
+    },
+
     methods: {
         onCapture() {
             this.img = this.$refs.webcam.capture();
