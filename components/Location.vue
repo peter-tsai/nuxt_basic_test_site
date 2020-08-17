@@ -32,7 +32,7 @@
 
 <script>
 
-const geolocator = require('geolocator');
+//const geolocator = require('geolocator');
 
 export default {
 
@@ -52,6 +52,7 @@ export default {
 
         getUserLocation() {
 
+            /*
             const options = {
                 enableHighAccuracy: true,
                 timeout: 5000,
@@ -78,8 +79,9 @@ export default {
                 this.location = location;
 
             });
+            */
 
-            /*
+            
 
             //do we support geolocation
             if(!("geolocation" in navigator)) {
@@ -97,7 +99,7 @@ export default {
                 this.errorStr = err.message;
             });
 
-            */
+            
 
 
 
