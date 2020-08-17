@@ -32,6 +32,8 @@
 
 <script>
 
+const geolocator = require('geolocator');
+
 export default {
 
     data() {
@@ -50,6 +52,35 @@ export default {
 
         getUserLocation() {
 
+            const options = {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumWait: 10000,     // max wait time for desired accuracy
+                maximumAge: 0,          // disable cache
+                desiredAccuracy: 30,    // meters
+                fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
+                addressLookup: false,    // requires Google API key if true
+                timezone: false,         // requires Google API key if true
+                map: "map-canvas",      // interactive map element id (or options object)
+                staticMap: false         // get a static map image URL (boolean or options object)
+            };
+
+            geolocator.locate(options, function (err, location) {
+                
+                if (err) {
+                    this.errorStr = err.message;
+                    return console.log(err);
+                }
+                
+                console.log(location);
+
+                this.gettingLocation = false;
+                this.location = location;
+
+            });
+
+            /*
+
             //do we support geolocation
             if(!("geolocation" in navigator)) {
                 this.errorStr = 'Geolocation is not available.';
@@ -65,6 +96,10 @@ export default {
                 this.gettingLocation = false;
                 this.errorStr = err.message;
             });
+
+            */
+
+
 
         },
 
